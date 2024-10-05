@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+    int BP,Netsalary;
+    float bonus,ta;
+    scanf("%d",&BP);
+    if(BP>0&&BP<=10000)
+    {
+        bonus=BP*2/100.0;
+        ta=BP*1/100.0;
+        printf("%f\n%f",bonus,ta);
+    }
+    else if(BP>=10001&&BP<=25000)
+    {
+    bonus=BP*5/100.0;
+    ta=BP*2/100.0;
+        printf("%f\n%f",bonus,ta);
+    }
+    else if(BP>=25001&&BP<=50000)
+    {
+      bonus=BP*10/100.0;
+      ta=BP*3/100.0;
+        printf("%f\n%f",bonus,ta);
+    }
+    else if(BP>=50001&&BP<=100000)
+    {
+        bonus=BP*15/100.0;
+        ta=BP*5/100.0;
+        printf("%f\n%f",bonus,ta);
+    }
+    else if(BP>100000)
+    {
+        bonus=BP*20/100.0;
+        ta=BP*5/100.0;
+        printf("%f\n%f",bonus,ta);
+    }
+      Netsalary=BP+ta+bonus;
+      printf("\n%d",Netsalary);
+    
+    return 0;
+}
