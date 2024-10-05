@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+int age;
+scanf("%d",&age);
+if(age>=18&&age<=110)
+{
+    printf("eligeble to vote");
+}
+else if(age<0||age>110)
+{
+    printf("invalid age");
+}
+else
+{
+    printf("ineligible");
+}
+   return 0;
+}
+
