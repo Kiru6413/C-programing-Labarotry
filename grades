@@ -1,0 +1,44 @@
+#include<stdio.h>
+int main()
+{
+    int tam,eng,mat,sci,ss,total,avg,grade;
+    scanf("%d%d%d%d%d",&tam,&eng,&mat,&sci,&ss);
+    total=tam+eng+mat+sci+ss;
+    printf("%d",total);
+    avg=total/5.0;
+    printf("\n%d\n",avg);
+    if((tam<0||tam>100)||(eng<0||eng>100)||(mat<0||mat>100)||(sci<0||sci>100)||(ss<0||ss>100))
+    {
+        printf("invalidmark");
+    }
+    else if((tam>=0&&tam<=50)||(eng>=0&&eng<=50)||(mat>=0&&mat<=50)||(sci>=0&&sci<=50)||(ss>=0&&ss<=50))
+    {
+        printf("fail");
+    }
+    else if(avg>=91&&avg<=100)
+    {
+        printf("grade o");
+    }
+    else if(avg>=81&&avg<=90)
+    {
+        printf("grade A+");
+    }
+    else if(avg>=71&&avg<=80)
+    {
+        printf("grade A");
+    }
+    else if(avg>=61&&avg<=70)
+    {
+        printf("grade B+");
+    }
+    else if(avg>=51&&avg<=60)
+    {
+        printf("grade B");
+    }
+    else
+    {
+        printf("invalid mark");
+    }
+    
+     return 0;
+}
