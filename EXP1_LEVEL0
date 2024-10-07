@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int pa,r,t;
+    float si;
+    scanf("%d%d%d",&pa,&r,&t);
+    si=(pa*t*r)/100.0;
+    printf("%.2f",si);
+    
+    return 0;
+}
