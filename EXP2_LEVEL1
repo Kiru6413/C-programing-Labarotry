@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float a,c;
+    scanf("%f",&a);
+    c=pow((a/2),2);
+    printf("%.2f",3.14*c);
+    
+    
+   return 0; 
+}
+
