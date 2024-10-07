@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int x,p;
+    scanf("%d",&x);
+    if(x<=0)
+    {
+        printf("invalid input");
+    }
+    else
+    {
+    p=(3*x*(x+1))/2;
+    printf("%d",p);
+    }
+    return 0;
+}
