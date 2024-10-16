@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d;
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    if(a==b&&a==c&&a==d)
+    {
+        printf("invalid input");
+    }
+    else if(a==b&&c==d||a==d&&b==c||a==c&&b==d)
+    {
+        printf("yes");
+    }
+    else
+    {
+        printf("no");
+    }
+    
+    
+    return 0;
+}
