@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+    float el,bill;
+    scanf("%f",&el);
+    if(el<=50)
+    {
+        bill=el*0.50;
+    }
+    else if(el>50&&el<=150)
+    {
+        bill=(el-50)*0.75+(50*0.50);
+    }
+    else if(el>150&&el<=250)
+    {
+        bill=(el-150)*1.20+(50*0.50)+(100*0.75);
+    }
+    else if(el>250)
+    {
+        bill=(el-250)*1.50+(50*0.50)+(100*0.75)+(100*1.20)+(20.0/100);
+    }
+    printf("%.2f",bill);
+    return 0;
+}
+    
+    
+
+
+
